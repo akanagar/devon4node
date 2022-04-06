@@ -3,7 +3,7 @@ toc::[]
 :idprefix:
 :idseparator: -
 
-= 12-factor-app with devon4j
+= 12-factor-app with devon4node
 
 This document mainly focuses on discussing how can you create 12 factor app with devon4j. To know more about this 12 factors you can refer https://12factor.net/[here] . Twelve factor is mainly focus on creating cloud native applications. These are the guidelines on what factors you need to consider in different stages of application lifecycle.
 
@@ -27,7 +27,7 @@ This factor mainly points at having seperate commit history for each service or 
 |Dependencies
 |*Explicitly declare and isolate dependencies*
 
-In devon4node we can declare dependencies in package.json. To isolate app from environment we can dockerize devon4j application.
+In devon4node we can declare dependencies in package.json. To isolate app from environment we can dockerize devon4node application.
 
 *References:* +
 
