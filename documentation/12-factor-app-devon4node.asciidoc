@@ -5,7 +5,7 @@ toc::[]
 
 = 12-factor-app with devon4node
 
-This document mainly focuses on discussing how can you create 12 factor app with devon4j. To know more about this 12 factors you can refer https://12factor.net/[here] . Twelve factor is mainly focus on creating cloud native applications. These are the guidelines on what factors you need to consider in different stages of application lifecycle.
+This document mainly focuses on discussing how can you create 12 factor app with devon4node. To know more about this 12 factors you can refer https://12factor.net/[here] . Twelve factor is mainly focus on creating cloud native applications. These are the guidelines on what factors you need to consider in different stages of application lifecycle.
 
 
 
@@ -17,9 +17,7 @@ This document mainly focuses on discussing how can you create 12 factor app with
 
 One codebase should be created with each process or service.
 Twelve factor app says do not share code between application. +
-If you must share code, build library and manage that through dependencies. +
-
-To create and manage library in spring boot refer https://docs.nestjs.com/cli/libraries[here]  +
+to create library in nestjs Refer https://docs.nestjs.com/cli/libraries[here]  +
 
 
 This factor mainly points at having seperate commit history for each service or process in case you are using any submodules consider using submodules in your revision control system as well.
@@ -44,7 +42,7 @@ Here, configuration means anything which can vary between different deployment s
 |Backing services
 |*Treat backing services as attached resources*
 
-To design your services, refer devon4j guide https://github.com/devonfw/devon4j/blob/master/documentation/guide-service-layer.asciidoc#jax-rs-configuration[here] 
+To design your services, refer https://docs.nestjs.com/providers[here] 
 
 |Build, release, run
 |*Strictly separate build and run stages*
@@ -58,8 +56,8 @@ https://docs.nestjs.com/fundamentals/injection-scopes[here]
 
 |Port binding
 |The web app exports HTTP as a service by binding to a port, and listening to requests coming in on that port.
-This is achieved in spring boot application as well as Quarkus. + 
-Both have embedded tomcat in it by default so we do not need to deploy explicitly and can be run as standalone application.
+This is achieved in nestjs application. + 
+Refer https://docs.nestjs.com/microservices/basics[here].
 
 |Concurrency
 |As process in application are stateless it will be easy to scale out application based on requirement. Refer guide for stateless programming  
