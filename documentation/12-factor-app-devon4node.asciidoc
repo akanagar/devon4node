@@ -37,7 +37,7 @@ https://blog.appsignal.com/2021/10/19/how-to-dockerize-an-existing-nodejs-applic
 |Config
 |*Store config in the environment*
 
-Here, configuration means anything which can vary between different deployment such as credential to external sources, backing services etc. To do such configuration in your java application refer guide https://docs.nestjs.com/techniques/configuration[here]
+Here, configuration means anything which can vary between different deployment such as credential to external sources, backing services etc. To do such configuration in your node application refer guide https://docs.nestjs.com/techniques/configuration[here]
 
 |Backing services
 |*Treat backing services as attached resources*
